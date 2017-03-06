@@ -33,7 +33,7 @@ public class BUILDWIN2 extends JFrame{
 					
 				// Announce the program, the arguments are frame, text inside, Title above, message type, icon 
 				JOptionPane.showMessageDialog(null, "Lets generate some windows in Java.", 
-						"STEMFEST 2017", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(BUILDWIN2.class.getResource("yay_32x40.png")));
+						"SCIENCE SLAM 2017", JOptionPane.INFORMATION_MESSAGE, new ImageIcon(BUILDWIN2.class.getResource("yay_32x40.png")));
 				
 			//	JFrame userFrame = new JFrame();
 				userFrame.setSize(600,500);
@@ -41,7 +41,7 @@ public class BUILDWIN2 extends JFrame{
 				// ask for the window title, the arguments are frame, text inside, Title above, message type
 				userTitle = JOptionPane.showInputDialog(userFrame, "This is a show input dialog box.\n"
 						+ "Java has components like this that can be \n"
-						+ "used to gather input.\n\n" + "Enter your first name ", "STEMFEST 2017", JOptionPane.QUESTION_MESSAGE);
+						+ "used to gather input.\n\n" + "Enter your first name ", "SCIENCE SLAM 2017", JOptionPane.QUESTION_MESSAGE);
 				
 
 				userFrame.setTitle(userTitle + "'s Custom Window in Java");
@@ -69,7 +69,7 @@ public class BUILDWIN2 extends JFrame{
 
 				JOptionPane.showMessageDialog(null,"That window is a frame with some text. \n "
 						+ "\n" + "Let's create another window that we can draw on.", 
-						"STEMFEST 2017",JOptionPane.INFORMATION_MESSAGE);
+						"SCIENCE SLAM 2017",JOptionPane.INFORMATION_MESSAGE);
 
 				userFrame.setVisible(false);	// HIDE THE MAIN
 				
@@ -126,7 +126,8 @@ public class BUILDWIN2 extends JFrame{
 				{
 					public void paintComponent(Graphics graph)
 					{
-						draw2(graph);					
+						draw2(graph);	
+						
 					}
 				};
 				
@@ -142,7 +143,7 @@ public class BUILDWIN2 extends JFrame{
 				}
 
 				JOptionPane.showMessageDialog(null,"Now let's look at a window with some interaction built in...", 
-						"STEMFEST 2017",JOptionPane.INFORMATION_MESSAGE);
+						"SCIENCE SLAM 2017",JOptionPane.INFORMATION_MESSAGE);
 
 				userFrame2.dispose();
 				
@@ -179,7 +180,8 @@ public class BUILDWIN2 extends JFrame{
 						for (int i = 130; i <= 280; i = i + 15)
 						{
 							barHeight = barHeight + 20;
-							g2.fillRect(i, 225 - barHeight/2, 8, barHeight);					
+							g2.fillRect(i, 225 - barHeight/2, 8, barHeight);
+							
 						}
 						
 						for (int i = 295; i <= 430; i = i + 15)
@@ -218,6 +220,7 @@ public class BUILDWIN2 extends JFrame{
 							if(height > 0)
 							{
 								g2.fillRect(c+105, (HEIGHT/2 - height) + 50, 3, height);	// args - top left as x,y, width, height
+								
 							}
 							else
 							{
